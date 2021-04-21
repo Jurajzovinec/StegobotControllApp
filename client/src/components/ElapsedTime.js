@@ -29,6 +29,7 @@ const ElapsedTimeComponent = ({duration}) => {
 }
 
 const ElapsedTime = ({ toggleStart, duration }) => {
+    
     const [key, setKey] = React.useState(undefined);
 
     React.useEffect(() => {

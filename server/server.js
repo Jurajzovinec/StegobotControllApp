@@ -14,11 +14,9 @@ io.on('connection', (socket) => {
     socket.emit('welcomeMessage', 'You have been connected via socket io.');
 
     socket.on('message', (message) => {
-        console.log(message);
     });
 
     socket.on('servoInstructions', (servoInstructions) => {
-        console.log(servoInstructions);
         rotateServoMotor(servoInstructions.dataset);
     });
 
